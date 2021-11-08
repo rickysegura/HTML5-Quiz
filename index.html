@@ -54,12 +54,25 @@
         </header>
 
         <div class="card-body">
-          <form action="">
-            <div class="form-group">
-              <p>Are HTML tags and elements the same thing?</p>
+          <form action="somePHPscript.php">
+            <ol>
+              <div class="form-group">
+                <li>Are HTML tags and elements the same thing?</li>
+                <input type="radio" id="yes" name="question" value="yes"><label for="yes">Yes</label><br>
+                <input type="radio" id="no" name="question" value="no"><label for="no">No</label>
+              </div>
 
-              <input type="radio" id="html" name="fav_language" value="HTML"><label for="html">HTML</label><br>
-              <input type="radio" id="idk" name="fav_language">
+              <div class="form-group">
+                <li>What are tags and attributes in HTML?</li>
+                <input type="radio" id="not_sure" name="true-truth" value="not_sure"><label for="not_sure">Not sure</label><br>
+                <input type="radio" id="tags_n_attributes" name="true-truth" value="correct"><label for="tags_n_attributes">Tags refer to individual HTML elements, while attributes define additional characteristics or properties of an element</label>
+              </div>
+            </ol>
+
+            <div class="form-group">
+              <div style="float:right;">
+                <input type="submit" class="btn btn-success" value="Submit">
+              </div>
             </div>
           </form>
         </div>
