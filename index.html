@@ -42,7 +42,7 @@
 
     <!-- Links -->
     <ul class="navbar-nav">
-      <li class="nav-item"><a class="nav-link" href="#">Exit Browser</a></li>
+      <li class="nav-item"><a class="nav-link" onclick="window.close();" id="pointer">Close Window</a></li>
     </ul>
   </nav>
 
@@ -50,15 +50,22 @@
     <div class="container">
       <div class="card">
         <header class="card-header">
-          <h2>Question 1</h2>
+          <h2>Questions</h2>
         </header>
 
         <div class="card-body">
-          <p>What is <code>HTML</code> an abbreviation of?</p>
+          <form action="">
+            <div class="form-group">
+              <p>Are HTML tags and elements the same thing?</p>
+
+              <input type="radio" id="html" name="fav_language" value="HTML"><label for="html">HTML</label><br>
+              <input type="radio" id="idk" name="fav_language">
+            </div>
+          </form>
         </div>
 
         <footer class="card-footer">
-          <p>Copyright &copy;2020-2021 by <a class="card-link" href="#">Ricky Segura</a></p>
+          <p>Copyright &copy;2020-2021 by <a class="card-link" href="https://rickythedev.w3spaces.com/" target="_blank">Ricky Segura</a></p>
         </footer>
       </div>
     </div>
